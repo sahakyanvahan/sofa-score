@@ -1,7 +1,8 @@
 name: Testing action
 on: [push]
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v2
-    - run: echo "Hello sofa score"
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: echo "Hello sofa score"
